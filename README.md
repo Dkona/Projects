@@ -1,4 +1,4 @@
-# Projects
+# Data_Analysis_Projects
 
 Project 1. NYSE Data analysis using Excel
 
