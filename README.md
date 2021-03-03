@@ -1,82 +1,12 @@
 # Data_analysis_projects
 Data analysis projects
 
-1. NYSE Data analysis
+Project 1. NYSE Data analysis
 Created a dashboard for a Profit and Loss Statement that calculates the Gross Profit, Operating Profit or EBIT for a company selected from a drop-down list (using data validation, OFFSET, INDEX and MATCH Functions) to pull historical fundamentals data to create the P&L Statements for all the years. Created a dynamic financial forecasting model for a company that forecasts out the Gross Profit, Operating Profit or EBIT for two more years using three scenarios.
 
-2. Music Store Analysis
+Project 2. Music Store Analysis
 Used the chinook music store data base to answer questions using SQL and presented the results using graphs created with the results in Excel. 
 
- Query 1 : The name and genre of the most popular track on playlist.
- 
-SELECT  w.trackid, q.Trackname, q.genre
-FROM
-(SELECT TrackId, c
-FROM
-(SELECT TrackId, c, DENSE_RANK() over (ORDER BY c DESC) dr
-FROM 
-(SELECT TrackId, COUNT(TrackId) c
-FROM PlaylistTrack 
-GROUP BY TrackId)) 
-WHERE dr = 1) w
-JOIN
-(SELECT tr.trackid, tr.name Trackname, g.name Genre
-FROM track tr
-JOIN Genre g
-ON g.genreid=tr.genreid) q
-ON w.trackid=q.TrackId
-
-
-Query 2: How many tracks were sold by each country in 2013?
-
-SELECT i.billingcountry, count(l.trackid) Tracks
-FROM invoice i
-JOIN Invoiceline l
-on i.invoiceid=l.invoiceid
-WHERE STRFTIME('%Y', i.invoicedate)='2013'
-GROUP by  i.billingCountry
-ORDER by tracks DESC
-
-Query 3: Which are the 5 shortest and 5 longest tracks and names of the artists
-
-SELECT * FROM
-(SELECT ar.name, (t.milliseconds)/1000 seconds
-from track t
-JOIN album al
-on t.albumid=al.AlbumId
-join artist ar
-on ar.artistid=al.artistid
-order by seconds desc
-limit 5)
-
-UNION all
-
-select * FROM
-(select ar.name, (t.milliseconds)/1000 seconds
-from track t
-JOIN album al
-on t.albumid=al.AlbumId
-join artist ar
-on ar.artistid=al.artistid
-order by seconds asc
-limit 5)
-
-Query 4: How many customers were served by support rep employees and which country are they located in?
-
-SELECT
-  employee.LastName,
-  Employee.FirstName,
-  Employee.Country,
-  z.c NumberOfCustomers
-FROM (SELECT
-  SupportRepId,
-  COUNT(customerid) c
-FROM Customer
-GROUP BY SupportRepId
-ORDER BY SupportRepId) z
-JOIN Employee
-  ON z.SupportRepId = Employee.EmployeeId
-  
 Project 3 : Used Tableau to analyze poverty in America using US Census Demographic Data from 2015 and presented the insights: 
 
  1. Insight #1
