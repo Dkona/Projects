@@ -20,7 +20,7 @@ https://public.tableau.com/profile/d.kona#!/vizhome/Insight_2_Deepti_Tableau_Pro
 Insight #3
 https://public.tableau.com/profile/d.kona#!/vizhome/Dashboard_Poverty_Deepti_Tableau_Project/Dashboard-PovertyinAmerica?publish=yes
 
-Project 4. Analyze A/B test results for launching a new webpage 
+Project 4. Analyze A/B test results for launching a new webpage    
 Used statistical techniques in Jupyter Notebook for investigating whether a company should implement a new page, or keep the old page
 
 Project 5 : Data Wrangling of Twitter data
