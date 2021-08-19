@@ -26,9 +26,9 @@ Used statistical techniques in Jupyter Notebook for investigating whether a comp
 Project 5 : Data Wrangling of Twitter data         
 The WeRateDogs data from twitter was assessed in Jupyter Notebook, and several quality and tidiness issues were identified and addressed. 
 
-Project 6. Data Visualization of Prosper Loan data
+Project 6. Data Visualization of Prosper Loan data           
 This data visualization project using matplotlib and seaborn, explores the Univariate, Bivariate and Multivariate distributions of the Prosper Loan data set containing borrowers loan data and attributes for approximately 11,4000 listings.
 
-Project 7. Patient Appointments Data Analysis 
+Project 7. Patient Appointments Data Analysis               
 The project investigates the factors that may contribute for a patient to show up or not show up for the appointment: Gender, Age, Hypertension, Diabetes, Alcoholism, Handicap, and SMS received
 
