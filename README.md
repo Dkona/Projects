@@ -20,3 +20,15 @@ https://public.tableau.com/profile/d.kona#!/vizhome/Insight_2_Deepti_Tableau_Pro
 Insight #3
 https://public.tableau.com/profile/d.kona#!/vizhome/Dashboard_Poverty_Deepti_Tableau_Project/Dashboard-PovertyinAmerica?publish=yes
 
+Project 4. Analyze A/B test results for launching a new webpage 
+Used statistical techniques in Jupyter Notebook for investigating whether a company should implement a new page, or keep the old page
+
+Project 5 : Data Wrangling of Twitter data
+The WeRateDogs data from twitter was assessed in Jupyter Notebook, and several quality and tidiness issues were identified and addressed. 
+
+Project 6. Data Visualization of Prosper Loan data
+This data visualization project using matplotlib and seaborn, explores the Univariate, Bivariate and Multivariate distributions of the Prosper Loan data set containing borrowers loan data and attributes for approximately 11,4000 listings.
+
+Project 7. Patient Appointments Data Analysis 
+The project investigates the factors that may contribute for a patient to show up or not show up for the appointment: Gender, Age, Hypertension, Diabetes, Alcoholism, Handicap, and SMS received
+
